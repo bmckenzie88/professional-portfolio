@@ -57,10 +57,11 @@ header nav ul li {
     background-position: center;
 }
 
-/* main {
-    display: flex;
-    flex-wrap: wrap;
-} */
+.profile-pic {
+    border-radius: 50%;
+    width: 400px;
+    float: right;
+}
 
 section {
     display: flex;
@@ -68,7 +69,6 @@ section {
     align-items:center;
 }
 h2 {
-    /* display: inline-block; */
     text-align: right;
     padding-right: 10px;
     font-size: 48px;
@@ -102,7 +102,7 @@ h2 {
     margin-top: -90px;
     padding-left: 10px;
     background-color: var(--secondary);
-    width: 100;
+    width: max-content;
 }
 
 .card-overlay {
@@ -159,32 +159,60 @@ h3 {
     font-weight: bold;
     text-decoration: underline;
 }
+    
 
-/* .card:hover, .card:hover .card-header {
-    box-shadow: inset 0px 0px 8px;
-} */
- .card .card-header {
-    /* transition: all 0.5s ease-in-out; */
-}
+@media screen and (max-width: 992px) {
+    header {
+        flex-direction: column;
+        padding: 0 0 10px 0;
+        text-align: center;
+    }
+    header nav {
+        margin: 0px;
+    }
 
-/*.card:hover,
-.card:hover .card-header {
-    box-shadow: inset 0px 0px 8px --secondary, 0 0 15px --primary;
-} */
+    section {
+        flex-direction: column;
+    }
 
-/* @media screen and (max-width: 992px) {
+    #about-me p {
+        border-left: none;
+        border-top: solid;
+        padding: 10px 0;
+        justify-content: center;
+    }
     h2 {
-      width: 80%;
-      justify-content: center;
-      text-align: left;
-      border-right: none;
-      border-bottom: solid #393e41;
+      width: 70%;
+      text-align:left;
+      padding: 0;
     } 
+
+    .card-container {
+        border-left: none;
+        border-top: solid;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #contact-me h2 {
+        width: 70%;
+        border-right: none;
+    }
+
+    #contact-me ul {
+        border-left: none;
+        border-top: solid;
+        padding: 10px 0;
+        justify-content: space-evenly;
+    }
+
+    #contact-me li {
+
+    }
   }
-  */
-  /* Cards are stacked on top of each other at 768px or smaller */
-  /* @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 768px) { 
     .card {
       width: 100%;
     }
-  } */
+  }
