@@ -44,8 +44,12 @@ header nav {
   margin-right: 5%;
 }
 
-header nav ul li {
-  display: inline-block;
+header nav li {
+    display: inline-block;
+}
+
+header nav ul li a {
+  /* display: inline-block; */
   margin-left: 25px;
   color: var(--secondary);
   text-decoration: underline;
