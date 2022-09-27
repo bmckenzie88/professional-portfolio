@@ -12,6 +12,9 @@ N/A
 ## Usage
 
 To use this website, you can navigate the page via scrolling or click one of the links in the top nav bar to jump to one of the three sections of the page. 
+
+URL: https://bmckenzie88.github.io/professional-portfolio/
+
 ![portfolio-dem](./assets/images/screenshot.jpeg)
 
 
